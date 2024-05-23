@@ -89,56 +89,25 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public int indexOf(T pattern) {
-        int res = -1;
-        if (pattern == null) {
-            int i = 0;
-            boolean isFound = false;
-            while (i < size && !isFound) {
-                if (array[i] == null) {
-                    res = i;
-                    isFound = true;
-                }
-                i++;
-            }
-        } else {
-            int i = 0;
-            boolean isFound = false;
-            while (i < size && !isFound) {
-                if (pattern.equals(array[i])) {
-                    res = i;
-                    isFound = true;
-                }
-                i++;
+        int index = -1;
+        for(int i=0; i<size && index==-1; i++) {
+            if ((pattern == null && array[i] == null) || (pattern != null && pattern.equals(array[i]))) {
+                index = i;
             }
         }
-        return res;
+        return index;
     }
 
     @Override
     public int lastIndexOf(T pattern) {
-        int res = -1;
-        if (pattern == null) {
-            int i = size - 1;
-            boolean isFound = false;
-            while (0 < i && !isFound) {
-                if (array[i] == null) {
-                    res = i;
-                    isFound = true;
-                }
-                i--;
-            }
-        } else {
-            int i = size - 1;
-            boolean isFound = false;
-            while (0 < i && !isFound) {
-                if (pattern.equals(array[i])) {
-                    res = i;
-                    isFound = true;
-                }
-                i--;
+        // DONE
+        int index = -1;
+        for(int i=size-1; i>=0 && index==-1; i--) {
+            if ((pattern == null && array[i] == null) || (pattern != null && pattern.equals(array[i]))) {
+                index = i;
             }
         }
-        return res;
+        return index;
     }
 
     @Override
