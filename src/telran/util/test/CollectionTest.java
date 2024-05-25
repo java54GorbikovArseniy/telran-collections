@@ -12,13 +12,10 @@ public abstract class CollectionTest {
 
     @BeforeEach
     void setUp() {
-        collection = createCollection();
         for (Integer num : numbers) {
             collection.add(num);
         }
     }
-
-    abstract Collection<Integer> createCollection();
 
     @Test
     void iteratorTest() {

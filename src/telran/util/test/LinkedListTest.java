@@ -2,14 +2,14 @@ package telran.util.test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import telran.util.ArrayList;
-import telran.util.Collection;
+import telran.util.LinkedList;
 
-public class ArrayListTest extends ListTest {
+public class LinkedListTest extends ListTest {
     @BeforeEach
-    @Override
+    @Test
     void setUp() {
-        collection = new ArrayList<>();
+        collection = new LinkedList<Integer>();
         super.setUp();
     }
+
 }
