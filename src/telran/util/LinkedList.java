@@ -31,10 +31,11 @@ public class LinkedList<T> implements List<T> {
     @Override
     public boolean remove(T pattern) {
         boolean res = true;
-        if (indexOf(pattern) == -1) {
+        int index = indexOf(pattern);
+        if (index == -1) {
             res = false;
         } else {
-            remove(indexOf(pattern));
+            remove(index);
         }
         return res;
     }
