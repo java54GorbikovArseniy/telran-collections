@@ -19,6 +19,7 @@ public class LinkedList<T> implements List<T> {
         }
     }
 
+    // O(1)
     @Override
     public boolean add(T obj) {
         Node<T> node = new Node<>(obj);
@@ -26,6 +27,7 @@ public class LinkedList<T> implements List<T> {
         return true;
     }
 
+    // O(n)
     @Override
     public boolean remove(T pattern) {
         boolean res = true;
@@ -37,21 +39,25 @@ public class LinkedList<T> implements List<T> {
         return res;
     }
 
+    // O(n)
     @Override
     public boolean contains(T pattern) {
         return indexOf(pattern) > -1;
     }
 
+    // O(1)
     @Override
     public int size() {
         return size;
     }
 
+    // O(1)
     @Override
     public Iterator<T> iterator() {
         return new LinkedListIterator();
     }
 
+    // O(n)
     @Override
     public T get(int index) {
         List.checkIndex(index, size, true);
@@ -59,6 +65,7 @@ public class LinkedList<T> implements List<T> {
         return current.data;
     }
 
+    // O(n)
     @Override
     public void add(int index, T obj) {
         List.checkIndex(index, size, false);
@@ -66,6 +73,7 @@ public class LinkedList<T> implements List<T> {
         addNode(index, node);
     }
 
+    //O(1)
     @Override
     public T remove(int index) {
         List.checkIndex(index, size, true);
@@ -83,11 +91,12 @@ public class LinkedList<T> implements List<T> {
         } else {
             tail = nodeToRemove.prev;
         }
-
+        nodeToRemove = null;
         size--;
         return elem;
     }
 
+    //O(n)
     @Override
     public int indexOf(T pattern) {
         int index = 0;
@@ -100,6 +109,7 @@ public class LinkedList<T> implements List<T> {
         return current != null ? index : -1;
     }
 
+    //O(n)
     @Override
     public int lastIndexOf(T pattern) {
         int index = size - 1;
@@ -112,10 +122,12 @@ public class LinkedList<T> implements List<T> {
         return current != null ? index : -1;
     }
 
+    //O(n)
     private Node<T> getNode(int index) {
         return index < size / 2 ? getNodeFromHead(index) : getNodeFromTail(index);
     }
 
+    //O(n)
     private Node<T> getNodeFromTail(int index) {
         Node<T> current = tail;
         for (int i = size - 1; i > index; i--) {
@@ -124,6 +136,7 @@ public class LinkedList<T> implements List<T> {
         return current;
     }
 
+    //O(n)
     private Node<T> getNodeFromHead(int index) {
         Node<T> current = head;
         for (int i = 0; i < index; i++) {
@@ -132,6 +145,7 @@ public class LinkedList<T> implements List<T> {
         return current;
     }
 
+    //O(1)
     private void addNode(int index, Node<T> node) {
         if (index == 0) {
             addHead(node);
@@ -143,6 +157,7 @@ public class LinkedList<T> implements List<T> {
         size++;
     }
 
+    //O(1)
     private void addMiddle(Node<T> node, int index) {
         Node<T> nodeNext = getNode(index);
         Node<T> nodePrev = nodeNext.prev;
@@ -152,6 +167,7 @@ public class LinkedList<T> implements List<T> {
         node.next = nodeNext;
     }
 
+    //O(1)
     private void addTail(Node<T> node) {
         //head cannot be null
         tail.next = node;
@@ -159,6 +175,7 @@ public class LinkedList<T> implements List<T> {
         tail = node;
     }
 
+    //O(1)
     private void addHead(Node<T> node) {
         if (head == null) {
             head = tail = node;
@@ -170,19 +187,23 @@ public class LinkedList<T> implements List<T> {
     }
 
     private class LinkedListIterator implements Iterator<T> {
-        int index = 0;
+        Node<T> current = head;
 
+        //O(1)
         @Override
         public boolean hasNext() {
-            return index < size;
+            return current != null;
         }
 
+        //O(1)
         @Override
         public T next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            return get(index++);
+            T data = current.data;
+            current = current.next;
+            return data;
         }
     }
 }
