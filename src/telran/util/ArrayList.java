@@ -90,7 +90,7 @@ public class ArrayList<T> implements List<T> {
     @Override
     public int indexOf(T pattern) {
         int index = -1;
-        for(int i=0; i<size && index==-1; i++) {
+        for (int i = 0; i < size && index == -1; i++) {
             if ((pattern == null && array[i] == null) || (pattern != null && pattern.equals(array[i]))) {
                 index = i;
             }
@@ -100,9 +100,8 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public int lastIndexOf(T pattern) {
-        // DONE
         int index = -1;
-        for(int i=size-1; i>=0 && index==-1; i--) {
+        for (int i = size - 1; i >= 0 && index == -1; i--) {
             if ((pattern == null && array[i] == null) || (pattern != null && pattern.equals(array[i]))) {
                 index = i;
             }

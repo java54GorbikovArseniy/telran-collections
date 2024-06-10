@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6c636f8-87e5-4fb7-af11-f5e143dfcd2f" name="Changes" comment="HW#23 update method remove">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/telran/util/HashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/telran/util/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/telran/util/test/HashSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/telran/util/test/SetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telran-collections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telran/util/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/telran/util/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telran/util/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/telran/util/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telran/util/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/telran/util/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telran/util/test/CollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/telran/util/test/CollectionTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2gjnfNVfRtBd0ZTFaIosYpKJCs9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/arseniy/IdeaProjects/TelRan/telran-collections&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.HashSetTest">
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telran-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="telran.util.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="telran.util.test" />
+      <option name="MAIN_CLASS_NAME" value="telran.util.test.ArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telran-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="telran.util.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="telran.util.test" />
+      <option name="MAIN_CLASS_NAME" value="telran.util.test.HashSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telran-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="telran.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="telran.util.test" />
+      <option name="MAIN_CLASS_NAME" value="telran.util.test.LinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telran-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="telran.util.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="telran.util.test" />
+      <option name="MAIN_CLASS_NAME" value="telran.util.test.SetTest" />
+      <option name="METHOD_NAME" value="getTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HashSetTest" />
+        <item itemvalue="JUnit.HashSetTest" />
+        <item itemvalue="JUnit.HashSetTest" />
+        <item itemvalue="JUnit.HashSetTest" />
+        <item itemvalue="JUnit.HashSetTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6c636f8-87e5-4fb7-af11-f5e143dfcd2f" name="Changes" comment="" />
+      <created>1716219958523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716219958523</updated>
+      <workItem from="1716285741209" duration="6840000" />
+      <workItem from="1716363136092" duration="13991000" />
+      <workItem from="1716477389537" duration="8037000" />
+      <workItem from="1716653145669" duration="14230000" />
+      <workItem from="1716707057089" duration="4313000" />
+      <workItem from="1716741385731" duration="2923000" />
+      <workItem from="1716827042051" duration="5289000" />
+      <workItem from="1717050867678" duration="1842000" />
+      <workItem from="1717673649075" duration="7848000" />
+      <workItem from="1717920054606" duration="9398000" />
+      <workItem from="1718000574085" duration="3262000" />
+    </task>
+    <task id="LOCAL-00001" summary="HW#22">
+      <created>1716378445575</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716378445575</updated>
+    </task>
+    <task id="LOCAL-00002" summary="HW#22change indexOF &amp; lastIndexOf method with requirement">
+      <created>1716479390558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716479390558</updated>
+    </task>
+    <task id="LOCAL-00003" summary="HW#23">
+      <created>1716674641426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716674641426</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HW#23 update iterator, modify method remove and adds complexity">
+      <created>1716718702978</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716718702978</updated>
+    </task>
+    <task id="LOCAL-00005" summary="HW#23 update method remove">
+      <created>1716718893034</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716718893034</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HW#22" />
+    <MESSAGE value="HW#22change indexOF &amp; lastIndexOf method with requirement" />
+    <MESSAGE value="HW#23" />
+    <MESSAGE value="HW#23 update iterator, modify method remove and adds complexity" />
+    <MESSAGE value="HW#23 update method remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW#23 update method remove" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/telran/util/test/ListTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="telran.util.ArrayList" memberName="size" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

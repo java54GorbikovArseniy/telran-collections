@@ -92,7 +92,9 @@ public class LinkedList<T> implements List<T> {
         } else {
             tail = nodeToRemove.prev;
         }
-        nodeToRemove = null;
+        nodeToRemove.data = null;
+        nodeToRemove.prev = null;
+        nodeToRemove.next = null;
         size--;
         return elem;
     }
